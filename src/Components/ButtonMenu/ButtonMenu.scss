@@ -1,0 +1,57 @@
+#button-menu {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-block: 1.2rem;
+  padding-left: 4rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 2px solid white;
+  color: white;
+  border-right: none;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  transition: background-color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  #button-menu {
+    border: 2px solid white;
+    text-align: center;
+    padding-inline: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #button-menu {
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    padding-inline: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #button-menu {
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    padding-inline: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #button-menu {
+    font-size: 1rem;
+    max-width: 400px;
+    padding: 0;
+    padding-block: 1rem;
+  }
+}

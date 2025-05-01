@@ -1,0 +1,771 @@
+#home {
+  background-color: black;
+  #hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../../assets/background-hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #hero-content {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      .desc-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 90vh;
+        padding-left: 7.4rem;
+
+        h1 {
+          font-weight: 700;
+          color: white;
+          font-size: 2.8rem;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: #d2d2d2;
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      .menu-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        width: 30%;
+
+        #title-menu-hero {
+          display: flex;
+          justify-content: end;
+          padding-right: 2rem;
+          width: 100%;
+          margin-bottom: 4rem;
+
+          p {
+            font-size: 1.8rem;
+            color: white;
+          }
+        }
+
+        #button-menu-hero {
+          padding-bottom: 5rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+
+  #about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+
+    .about-content-1,
+    .about-content-2 {
+      display: flex;
+      min-height: 50vh;
+      width: 100%;
+    }
+
+    .about-content-1 .about-us-conteiner-2,
+    .about-content-2 .about-us-conteiner-3,
+    .about-content-2 .about-us-conteiner-4 {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .about-content-1 .about-us-conteiner-1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .text-about-us {
+        padding: 5rem 2rem;
+        display: flex;
+        gap: 5rem;
+        flex-direction: column;
+
+        h2 {
+          font-weight: bold;
+          font-size: 2.8rem;
+          color: white;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 1.3rem;
+          color: #d2d2d2;
+        }
+      }
+    }
+
+    .about-content-1 .about-us-conteiner-2 {
+      width: 50%;
+      background-image: url(../../assets/background-about-us-1.png);
+    }
+
+    .about-content-2 .about-us-conteiner-3 {
+      width: 60%;
+      background-image: url(../../assets/background-about-us-2.png);
+    }
+
+    .about-content-2 .about-us-conteiner-4 {
+      width: 40%;
+    }
+
+    .button-about-us-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 127px;
+    }
+  }
+}
+
+/* RESPONSIVIDADE */
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  #home {
+    #hero {
+      #hero-content {
+        padding-inline: 6rem;
+
+        .desc-hero {
+          padding-left: 10rem;
+
+          h1 {
+            font-size: 3.6rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+          }
+        }
+
+        .menu-hero {
+          #title-menu-hero p {
+            font-size: 2rem;
+          }
+          #button-menu-hero {
+            gap: 2.5rem;
+          }
+        }
+      }
+    }
+    #about-us {
+      .about-content-1 .about-us-conteiner-1 .text-about-us {
+        h2 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    #contact {
+      .desc-contact {
+        .text-content-contact {
+          h2 {
+            font-size: 2.4rem;
+          }
+
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .form-contact-content {
+        padding-inline: 5rem;
+
+        p {
+          font-size: 1.7rem;
+        }
+
+        form {
+          input,
+          select {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #home {
+    #hero {
+      #hero-content {
+        .desc-hero {
+          padding-left: 5rem;
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.7rem;
+          }
+        }
+
+        .menu-hero {
+          #title-menu-hero p {
+            font-size: 1.7rem;
+          }
+
+          #button-menu-hero {
+            gap: 2rem;
+          }
+        }
+      }
+    }
+
+    #about-us {
+      .about-content-1 .about-us-conteiner-1 .text-about-us {
+        padding-inline: 2rem;
+        h2 {
+          font-size: 2.6rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+      }
+
+      .button-about-us-container {
+        bottom: 100px;
+      }
+
+      .about-content-2 {
+        min-height: 40vh;
+      }
+
+      .button-about-us-container {
+        bottom: 100px;
+      }
+    }
+
+    #contact {
+      .desc-contact {
+        padding: 120px 2rem 100px;
+
+        .text-content-contact {
+          h2 {
+            font-size: 2.2rem;
+          }
+
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      .form-contact-content {
+        padding-inline: 2rem;
+
+        p {
+          font-size: 1.4rem;
+        }
+
+        form {
+          input,
+          select {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #home {
+    #hero {
+      #hero-content {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        text-align: center;
+
+        .desc-hero {
+          height: auto;
+
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+
+          h1 {
+            font-size: 2.8rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+        }
+
+        .menu-hero {
+          width: 100%;
+          height: auto;
+          align-items: center;
+
+          #title-menu-hero {
+            justify-content: center;
+            padding-right: 0;
+            margin-bottom: 4rem;
+
+            p {
+              font-size: 1.6rem;
+            }
+          }
+
+          #button-menu-hero {
+            align-items: center;
+            padding-bottom: 4rem;
+            gap: 2rem;
+          }
+        }
+      }
+    }
+
+    #about-us {
+      .about-content-1 {
+        .about-us-conteiner-2 {
+          display: none;
+        }
+
+        .about-us-conteiner-1 {
+          width: 100%;
+        }
+      }
+
+      .about-content-2 {
+        min-height: 30vh;
+        .about-us-conteiner-3 {
+          width: 100%;
+        }
+
+        .about-us-conteiner-4 {
+          display: none;
+        }
+      }
+
+      .text-about-us {
+        padding: 3rem 1.5rem;
+
+        h2 {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+      }
+
+      .button-about-us-container {
+        bottom: 11vh;
+      }
+    }
+
+    #contact {
+      display: flex;
+      flex-wrap: wrap;
+
+      .desc-contact {
+        padding: 100px 0 80px;
+        width: 100%;
+        align-items: center;
+
+        .text-content-contact {
+          h2 {
+            font-size: 2rem;
+            text-align: center;
+          }
+
+          p {
+            font-size: 1.4rem;
+            text-align: center;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .links-media {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+          }
+        }
+      }
+
+      .form-contact-content {
+        min-height: 80vh;
+        width: 100%;
+        padding-inline: 7rem;
+
+        p {
+          font-size: 1.4rem;
+        }
+
+        form {
+          input,
+          select {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    #hero {
+      #hero-content {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        text-align: center;
+
+        .desc-hero {
+          height: auto;
+
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-inline: 2rem;
+          gap: 2rem;
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.6rem;
+          }
+        }
+
+        .menu-hero {
+          width: 100%;
+          height: auto;
+          align-items: center;
+
+          #title-menu-hero {
+            justify-content: center;
+            padding-right: 0;
+            margin-bottom: 4rem;
+
+            p {
+              font-size: 1.6rem;
+            }
+          }
+
+          #button-menu-hero {
+            align-items: center;
+            padding-bottom: 4rem;
+            gap: 2rem;
+          }
+        }
+      }
+    }
+
+    #about-us {
+      .about-content-1 {
+        .about-us-conteiner-2 {
+          display: none;
+        }
+
+        .about-us-conteiner-1 {
+          width: 100%;
+
+          .text-about-us {
+            padding: 3rem 1.5rem;
+
+            h2 {
+              font-size: 2.4rem;
+              text-align: center;
+            }
+
+            p {
+              font-size: 1.4rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .about-content-2 {
+        min-height: 30vh;
+        .about-us-conteiner-3 {
+          width: 100%;
+        }
+
+        .about-us-conteiner-4 {
+          display: none;
+        }
+      }
+
+      .button-about-us-container {
+        bottom: 11vh;
+      }
+    }
+
+    #contact {
+      display: flex;
+      flex-wrap: wrap;
+
+      .desc-contact {
+        padding: 100px 0 80px;
+        width: 100%;
+        align-items: center;
+
+        .text-content-contact {
+          h2 {
+            font-size: 2rem;
+            text-align: center;
+          }
+
+          p {
+            font-size: 1.4rem;
+            text-align: center;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .links-media {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+          }
+        }
+      }
+
+      .form-contact-content {
+        min-height: 100vh;
+        width: 100%;
+        padding-inline: 2rem;
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        form {
+          input,
+          select {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home {
+    #hero {
+      #hero-content {
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        text-align: center;
+
+        .desc-hero {
+          padding-top: 6rem;
+
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-inline: 2rem;
+          gap: 2rem;
+
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+          }
+
+          p {
+            font-size: 1rem;
+            margin-bottom: 0;
+
+            br {
+              display: none;
+            }
+          }
+        }
+
+        .menu-hero {
+          width: 100%;
+          align-items: center;
+
+          #title-menu-hero {
+            justify-content: center;
+            padding-right: 0;
+            margin-bottom: 2rem;
+
+            p {
+              font-size: 1.3rem;
+            }
+          }
+
+          #button-menu-hero {
+            align-items: center;
+            padding-bottom: 4rem;
+            gap: 2rem;
+            padding-inline: 10%;
+          }
+        }
+      }
+    }
+
+    #about-us {
+      .about-content-1 {
+        .about-us-conteiner-2 {
+          display: none;
+        }
+
+        .about-us-conteiner-1 {
+          width: 100%;
+
+          .text-about-us {
+            padding: 3rem 1rem;
+            gap: 2rem;
+
+            h2 {
+              font-size: 2rem;
+              text-align: center;
+            }
+
+            p {
+              font-size: 0.8rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .about-content-2 {
+        min-height: 30vh;
+        .about-us-conteiner-3 {
+          width: 100%;
+        }
+
+        .about-us-conteiner-4 {
+          display: none;
+        }
+      }
+
+      .button-about-us-container {
+        bottom: 11vh;
+      }
+    }
+
+    #contact {
+      display: flex;
+      flex-wrap: wrap;
+
+      .desc-contact {
+        padding: 5rem 0;
+        width: 100%;
+        align-items: center;
+        gap: 100px;
+
+        .text-content-contact {
+          h2 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+            text-align: center;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+          }
+
+          .links-media {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+          }
+        }
+      }
+
+      .form-contact-content {
+        min-height: 100vh;
+        width: 100%;
+        padding: 4rem 2rem;
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 3rem;
+
+          br {
+            display: none;
+          }
+        }
+
+        form {
+          input,
+          select {
+            font-size: 1rem;
+          }
+
+          select {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
